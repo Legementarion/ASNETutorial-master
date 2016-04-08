@@ -95,7 +95,7 @@ public class MainFragment extends Fragment implements SocialNetworkManager.OnIni
 
 
 
-            InstagramSocialNetwork instagramNetwork = new InstagramSocialNetwork(this, getResources().getString(R.string.instagram_consumer_key),getResources().getString(R.string.instagram_consumer_secret),TWITTER_CALLBACK_URL, "");
+            InstagramSocialNetwork instagramNetwork = new InstagramSocialNetwork(this, getResources().getString(R.string.instagram_consumer_key),getResources().getString(R.string.instagram_consumer_secret),TWITTER_CALLBACK_URL, "public_content+comments");
             mSocialNetworkManager.addSocialNetwork(instagramNetwork);
 
             //Initiate every network from mSocialNetworkManager
